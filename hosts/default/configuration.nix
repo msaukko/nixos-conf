@@ -116,8 +116,6 @@ in
   };
   programs.git = {
     enable = true;
-    userName = "Halk0";
-    userEmail = "juustoburkeri@gmail.com";
     lfs.enable = true;
   };
 
