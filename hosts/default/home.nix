@@ -19,6 +19,9 @@
     discord
     dolphin
     libnotify
+    unzip
+    gzip
+    jq
   ];
 
   # Allowing unfree for nixpkgs in home manager
