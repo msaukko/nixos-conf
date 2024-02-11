@@ -119,9 +119,6 @@ in
     userName = "Halk0";
     userEmail = "juustoburkeri@gmail.com";
     lfs.enable = true;
-    extraConfig = {
-      push = { autoSetupRemote = true; };
-    };
   };
 
   # Network config
