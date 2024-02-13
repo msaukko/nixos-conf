@@ -6,6 +6,10 @@
     enable = true;
     policies = {
       ExtensionSettings = {
+        "foxyproxy@eric.h.jung" = {
+           install_url = "https://addons.mozilla.org/firefox/downloads/file/4228676/foxyproxy_standard-8.9.xpi";
+           installation_mode = "force_install";
+        };
         # Ublock
         "uBlock0@raymondhill.net" = {
           install_url = "https://addons.mozilla.org/firefox/downloads/file/4216633/ublock_origin-1.55.0.xpi";
