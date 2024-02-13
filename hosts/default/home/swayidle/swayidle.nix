@@ -14,7 +14,7 @@
       }
       {
         event = "lock";
-        command = "swaylock -defF";
+        command = "swaylock -defF --indicator --clock --screenshots --effect-blur 50x10";
       }
     ];
     timeouts = [{
