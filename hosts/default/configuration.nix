@@ -35,6 +35,7 @@ in
   services.xserver.xkb.layout = {
     layout="fi";
   };
+  services.blueman.enable = true;
   
   # User config
   users.users.halko = {
