@@ -12,7 +12,7 @@
         height = 30;
         layer = "top";
         position = "top";
-        tray = { spacing = 10; };
+        tray = { spacing = 3; };
         modules-center = [ "hyprland/window" ];
         modules-left = [
           "hyprland/workspaces"

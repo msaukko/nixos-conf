@@ -22,6 +22,14 @@
     unzip
     gzip
     jq
+    p7zip
+    unrar
+    mtr
+    whois
+    nmap
+    tcpdump
+    tcpreplay
+    wireshark 
   ];
 
   # Allowing unfree for nixpkgs in home manager
@@ -51,6 +59,8 @@
     ./home/hyprpaper/hyprpaper.nix
     ./home/sshconfig/sshconfig.nix
     ./home/mako/mako.nix
+    ./home/easyeffects/easyeffects.nix
+    ./pkg-sets/security/security.nix
   ];
 
   # Session variables
