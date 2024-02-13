@@ -50,7 +50,7 @@
       "$mod_sft, right, movewindow, r"
       "$mod_sft, up, movewindow, u"
       "$mod_sft, down, movewindow, d"
-      "$mod_sft, O, exec, swaylock --indicator --clock --screenshots --effect-blur 50x10"
+      "$mod_sft, O, exec, swaylock -f -c 000000"
       "$mod_sft, SPACE, togglefloating"
       "$mod, D, exec, $menu"
       "$mod, W, togglegroup"
@@ -59,7 +59,6 @@
       "$mod_sft, Print, exec, slurp | grim -t jpeg -g - ~/screenshots/$(date +'%H:%M:%S').jpeg"
       "$mod, Print, exec, grim -t jpeg ~/screenshots/$(date +'%H:%M:%S').jpeg"
       ", XF86AudioMute, exec, pactl set-sink-mute @DEFAULT_SINK@ toggle"
-      ", XF86AudioMicMute, exec, pactl set-source-mute @DEFAULT_SOURCE@ toggle"
     ]
     ++ (
       builtins.concatLists (builtins.genList (
