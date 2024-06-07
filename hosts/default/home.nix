@@ -5,6 +5,7 @@
   home.homeDirectory = "/home/halko";
   home.stateVersion = "23.11";
   home.packages = with pkgs; [
+    dnsutils
     swaylock-effects
     swayidle
     htop
@@ -29,7 +30,9 @@
     nmap
     tcpdump
     tcpreplay
-    wireshark 
+    wireshark
+    vscode
+    teamspeak_client
   ];
 
   # Allowing unfree for nixpkgs in home manager
@@ -61,6 +64,8 @@
     ./home/mako/mako.nix
     ./home/easyeffects/easyeffects.nix
     ./pkg-sets/security/security.nix
+    ./pkg-sets/security/wordlists.nix
+    ./games/games.nix
   ];
 
   # Session variables

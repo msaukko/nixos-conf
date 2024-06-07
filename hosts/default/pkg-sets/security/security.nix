@@ -46,6 +46,18 @@
     wpscan
     aircrack-ng
     exploitdb
+    gimp
+    audacity
+    fceux
+    exiftool
+    stegsolve
+    powershell
+    openssl
+    zsteg
+    steam-run
+    upx
+    grpc-client-cli
+    pwndbg
   ];
 
 }

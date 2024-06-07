@@ -36,6 +36,9 @@
       ", XF86MonBrightnessDown, exec, brightnessctl set 10%-"
       ", XF86MonBrightnessUp, exec, brightnessctl set +10%"
     ];
+    bindn = [
+      ",mouse:276, pass, ^(TeamSpeak 3)$"
+    ];
     bind = [
       "$mod, Return, exec, $terminal"
       "$mod_sft, F, exec, firefox"

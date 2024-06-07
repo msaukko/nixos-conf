@@ -35,8 +35,7 @@ in
   services.xserver.xkb.layout = {
     layout="fi";
   };
-  services.blueman.enable = true;
-  
+  services.blueman.enable = true; 
   # User config
   users.users.halko = {
     isNormalUser = true;
@@ -122,9 +121,10 @@ in
   };
 
   # Network config
+  networking.extraHosts = ''
+  '';
   networking.networkmanager.enable = true;
   networking.hostName = "wlrs-2";
-
   # Security config
   security.polkit.enable = true;  
 
