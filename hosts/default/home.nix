@@ -33,6 +33,7 @@
     wireshark
     vscode
     teamspeak_client
+    unetbootin
   ];
 
   # Allowing unfree for nixpkgs in home manager
@@ -65,9 +66,10 @@
     ./home/easyeffects/easyeffects.nix
     ./pkg-sets/security/security.nix
     ./pkg-sets/security/wordlists.nix
+    ./pkg-sets/security/nixos-security.nix
     ./games/games.nix
   ];
-
+  
   # Session variables
   home.sessionVariables = {
     EDITOR = "vim";

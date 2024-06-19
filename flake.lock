@@ -1,5 +1,20 @@
 {
   "nodes": {
+    "flake-utils": {
+      "locked": {
+        "lastModified": 1620759905,
+        "narHash": "sha256-WiyWawrgmyN0EdmiHyG2V+fqReiVi8bM9cRdMaKQOFg=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "b543720b25df6ffdfcf9227afafc5b8c1fabfae8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
     "home-manager": {
       "inputs": {
         "nixpkgs": [
@@ -39,7 +54,29 @@
     "root": {
       "inputs": {
         "home-manager": "home-manager",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "secpkgs": "secpkgs"
+      }
+    },
+    "secpkgs": {
+      "inputs": {
+        "flake-utils": "flake-utils",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1692759306,
+        "narHash": "sha256-dt7xWIrJP37gP6/DbmUZNPDOaZt1WB0fp+j/d0QTLsQ=",
+        "owner": "juliosueiras-nix",
+        "repo": "nix-security",
+        "rev": "b136a7e0dca7615ed880be4b0b64d37e41aec9f2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "juliosueiras-nix",
+        "repo": "nix-security",
+        "type": "github"
       }
     }
   },

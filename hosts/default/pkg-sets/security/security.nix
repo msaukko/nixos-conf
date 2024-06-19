@@ -59,6 +59,5 @@
     grpc-client-cli
     pwndbg
   ];
-
 }
 

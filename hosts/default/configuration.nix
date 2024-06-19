@@ -42,8 +42,12 @@ in
     home = "/home/halko";
     description = "Halko";
     shell = pkgs.zsh;
-    extraGroups = [ "wheel" "networkmanager" "video" "audio" ];
+    extraGroups = [ "libvirtd"  "wheel" "networkmanager" "video" "audio" ];
   };
+
+  # KVM
+  virtualisation.libvirtd.enable = true;
+  programs.virt-manager.enable= true;
 
   # Home-manager config
   home-manager = {
