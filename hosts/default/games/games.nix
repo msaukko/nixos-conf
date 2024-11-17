@@ -2,7 +2,7 @@
 
 {
   home.packages = with pkgs; [
-    runelite
+    nethack-x11
   ];
 
 }
