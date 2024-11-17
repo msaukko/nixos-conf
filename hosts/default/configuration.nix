@@ -23,13 +23,12 @@ in
   fileSystems."/".options = [ "noatime" "nodiratime" "discard" ];
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-  boot.initrd.luks.devices.luksroot = { device = "/dev/disk/by-uuid/462f844b-2fa7-454a-a441-b36341e4cd8b"; preLVM = true; allowDiscards = true; };
-
+  
   # System config
-  system.stateVersion = "23.11";
+  system.stateVersion = "24.05";
   system.autoUpgrade.enable = true;
   system.autoUpgrade.allowReboot = false;
-  system.autoUpgrade.channel = "https://channels.nixos.org/nixos-unstable";
+  system.autoUpgrade.channel = "https://channels.nixos.org/nixos-24.05";
 
   # Set keyboard layout
   services.xserver.xkb.layout = {
@@ -37,10 +36,10 @@ in
   };
   services.blueman.enable = true; 
   # User config
-  users.users.halko = {
+  users.users.otter = {
     isNormalUser = true;
-    home = "/home/halko";
-    description = "Halko";
+    home = "/home/otter";
+    description = "Otter";
     shell = pkgs.zsh;
     extraGroups = [ "libvirtd"  "wheel" "networkmanager" "video" "audio" ];
   };
@@ -53,7 +52,7 @@ in
   home-manager = {
     extraSpecialArgs = { inherit inputs; };
     users = {
-      "halko" = import ./home.nix;
+      "otter" = import ./home.nix;
     };
   };
 
@@ -114,11 +113,6 @@ in
   # System wide enabled programs
   programs.zsh.enable = true;
   programs.dconf.enable = true;
-  programs._1password.enable = true;
-  programs._1password-gui = {
-    enable = true;
-    polkitPolicyOwners = ["halko"];
-  };
   programs.git = {
     enable = true;
     lfs.enable = true;
@@ -128,7 +122,7 @@ in
   networking.extraHosts = ''
   '';
   networking.networkmanager.enable = true;
-  networking.hostName = "wlrs-2";
+  networking.hostName = "lairtop";
   # Security config
   security.polkit.enable = true;  
 
