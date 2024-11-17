@@ -1,9 +1,9 @@
 { config, pkgs, ... }:
 
 {
-  home.username = "halko";
-  home.homeDirectory = "/home/halko";
-  home.stateVersion = "23.11";
+  home.username = "otter";
+  home.homeDirectory = "/home/otter";
+  home.stateVersion = "24.05";
   home.packages = with pkgs; [
     dnsutils
     swaylock-effects
@@ -17,7 +17,6 @@
     bemenu
     brightnessctl
     hyprpaper
-    discord
     dolphin
     libnotify
     unzip
@@ -29,11 +28,10 @@
     whois
     nmap
     tcpdump
-    tcpreplay
     wireshark
-    vscode
-    teamspeak_client
+    vscodium
     unetbootin
+    bitwarden-desktop
   ];
 
   # Allowing unfree for nixpkgs in home manager
