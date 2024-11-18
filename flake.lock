@@ -55,28 +55,6 @@
       "inputs": {
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs",
-        "secpkgs": "secpkgs"
-      }
-    },
-    "secpkgs": {
-      "inputs": {
-        "flake-utils": "flake-utils",
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1692759306,
-        "narHash": "sha256-dt7xWIrJP37gP6/DbmUZNPDOaZt1WB0fp+j/d0QTLsQ=",
-        "owner": "juliosueiras-nix",
-        "repo": "nix-security",
-        "rev": "b136a7e0dca7615ed880be4b0b64d37e41aec9f2",
-        "type": "github"
-      },
-      "original": {
-        "owner": "juliosueiras-nix",
-        "repo": "nix-security",
-        "type": "github"
       }
     }
   },
