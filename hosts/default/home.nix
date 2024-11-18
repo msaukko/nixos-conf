@@ -5,34 +5,49 @@
   home.homeDirectory = "/home/otter";
   home.stateVersion = "24.05";
   home.packages = with pkgs; [
+    bemenu
+    bitwarden-desktop
+    brightnessctl
     dnsutils
-    swaylock-effects
-    swayidle
-    htop
-    psensor
+    dolphin
+    element-web
     feh
     file
-    netcat
-    openvpn
-    bemenu
-    brightnessctl
-    hyprpaper
-    dolphin
-    libnotify
-    unzip
+    freecad
+    gimp
     gzip
+    htop
+    hyprpaper
     jq
-    p7zip
-    unrar
+    libnotify
+    mqttx
     mtr
-    whois
+    netcat
+    nextcloud-client
     nmap
+    obsidian
+    openscad
+    openvpn
+    p7zip
+    prusa-slicer
+    psensor
+    remmina
+    signal-desktop
+    spotify
+    swayidle
+    swaylock-effects
     tcpdump
-    wireshark
-    vscodium
+    thunderbird
+    tor-browser
+    transmission
     unetbootin
-    bitwarden-desktop
-  ];
+    unrar
+    unzip
+    vlc
+    vscodium
+    whois
+    wireshark
+];
 
   # Allowing unfree for nixpkgs in home manager
   nixpkgs.config.allowUnfree = true;
